@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/sign-in.css">
+
+
+</head>
+<body>
+    <main>
+        <div class="icon-tickitz">
+            <img src="../src/images/icons/icon-tickitz.png" alt="icon-tickitz">
+        </div>
+        <section>
+            <h2 class="welcome-text">Welcome Back <span>&#128075;</span></h2>
+            <p class="sub-text-welcome">Sign in with your data that you entered during your registration</p>
+            <form class="form-sign-in" action="">
+                <div class="con-input">
+                    <label for="input-email">Email</label>
+                    <input type="email" name="email" id="input-email" placeholder="Enter your email" required>
+                </div>
+                <div class="con-input">
+                    <label for="input-password">Password</label>
+                    <input type="password" name="password" id="input-password" placeholder="Enter your password" required autocomplete="on">
+                    <img class="show-password" src="../src/images/icons/icon-eye.svg" alt="">
+                </div>
+                <a href="" class="forget-password">Forgot your password?</a>
+                <input class="btn-submit" type="submit" value="Login">
+            </form>
+            <div class="con-line-or">
+                <hr>
+                <p>Or</p>
+                <hr>
+            </div>
+            <div class="con-logo-sosmed">
+                <a class="logo-sosmed">
+                    <img class="icon" src="../src/images/icons/google-icon.png" alt="icon-google">
+                    <p>Google</p>
+                </a>
+                <a class="logo-sosmed">
+                    <img class="icon" src="../src/images/icons/fb-icon.png" alt="icon-facebook">
+                    <p>Facebook</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script> 
+        const show_password = document.querySelector(".show-password");
+
+        show_password.addEventListener("click", () => {
+            const elmInputPassword = document.querySelector("#input-password");
+
+            if(elmInputPassword.type == "password") {
+                elmInputPassword.type = "text";
+            }else {
+                elmInputPassword.type = "password";
+            }
+        })
+    </script>
+</body>
+</html>

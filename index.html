@@ -3,84 +3,228 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up</title>
+    <title>Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./src/css/sign-up-style.css">
-
-
+    <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="./src/css/responsive-home.css">
 </head>
 <body>
-    <main>
+    <header>
         <div class="icon-tickitz">
-            <img src="./src/images/icons/icon-tickitz.png" alt="icon-tickitz">
+            <img src="../src/images/Tickitz 1.png" alt="icon tickitz app">
         </div>
-        <section>
-            <div class="con-flow-sign-up">
-                <div class="con-number-flow">
-                    <p class="number-flow number-1">1</p>
-                    <p class="title-number-flow title-number-1">Fill Form</p>
+        <nav id="side-menu">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Movie</a></li>
+                <li><a href="">Buy Ticket</a></li>
+            </ul>
+        </nav>
+        <div class="con-btn-sign">
+            <a class="btn-sign-in" href="./pages/sign-in.html">SignIn</a>
+            <a class="btn-sign-up" href="./pages/sign-up.html">Sign Up</a>
+        </div>
+        <label class="btn-nav" for="check-menu">
+            <img src="./src/images/icons/gg_menu-right-alt.svg" alt="">
+            <input id="check-menu" type="checkbox">
+        </label>
+    </header>
+    <main>
+        <article class="con-hero">
+            <section class="hero-words">
+                <h2>MOVIE TICKET PURCHASES #1 IN INDONESIA</h2>
+                <p class="motivation">Experience the Magic of Cinema: Book Your Tickets Today</p>
+                <p>Sign up and get the ticket with a lot of discount</p>
+            </section>
+            <section class="hero-images">
+                <div class="sub-images">
+                    <img src="./src/images/Rectangle 35.png" alt="">
+                    <img src="./src/images/Rectangle 37.png" alt="">
                 </div>
-                <div class="con-line-flow">
-                    <img class="line-flow" src="./src/images/icons/line-icon.svg" alt="">
+                <div class="sub-images">
+                    <img src="./src/images/Rectangle 36.png" alt="">
+                    <img src="./src/images/Rectangle 38.png" alt="">
                 </div>
-                <div class="con-number-flow">
-                    <p class="number-flow">2</p>
-                    <p class="title-number-flow">Activate</p>
+            </section>
+        </article>
+        <article class="con-why">
+            <h2>WHY CHOOSE US</h2>
+            <p class="sub-title">Unleashing the Ultimate Movie Experience</p>
+            <section class="con-services">
+                <div class="services">
+                    <div class="con-img-services">
+                        <img src="./src/images/icons/Shield-check.svg" alt="">
+                    </div>
+                    <p class="title-services">Guaranteed</p>
+                    <p class="sub-title-services">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
                 </div>
-                <div class="con-line-flow">
-                    <img class="line-flow" src="./src/images/icons/line-icon.svg" alt="">
+                <div class="services">
+                    <div class="con-img-services">
+                        <img src="./src/images/icons/icon-chec-circle.svg" alt="">
+                    </div>
+                    <p class="title-services">Affordable</p>
+                    <p class="sub-title-services">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
                 </div>
-                <div class="con-number-flow">
-                    <p class="number-flow">3</p>
-                    <p class="title-number-flow">Done</p>
+                <div class="services">
+                    <div class="con-img-services">
+                        <img src="./src/images/icons/icons8-speech-bubble 1.svg" alt="">
+                    </div>
+                    <p class="title-services">24/7 Customer Support</p>
+                    <p class="sub-title-services">Lorem ipsum dolor sit amet, consectetur adipis elit. Sit enim nec, proin faucibus nibh et sagittis a. Lacinia purus ac amet.</p>
+                </div>
+            </section>
+        </article>
+        <article class="con-movies">
+            <h2 class="title">MOVIES</h2>
+            <p class="sub-title sub-title-movie">Exciting Movies That Should Be Watched Today</p>
+            <div class="con-card-movies">
+                <div class="card-movies">
+                    <img src="./src/images/Rectangle 140.png" alt="">
+                    <p class="movie-name">Black Widow</p>
+                    <div class="con-movie-genre">
+                        <p class="movie-genre">Action</p>
+                        <p class="movie-genre">Adventure</p>
+                    </div>
+                    <div class="con-details-buy">
+                        <a href="">Details</a>
+                        <a class="btn-buy">Buy Ticket</a>
+                    </div>
+                    <div class="dark-image"></div>
+                </div>
+                <div class="card-movies">
+                    <img src="./src/images/Rectangle 1399.png" alt="">
+                    <p class="movie-name">The Witches</p>
+                    <div class="con-movie-genre">
+                        <p class="movie-genre">Comedy</p>
+                        <p class="movie-genre">Adventure</p>
+                    </div>
+                    <p class="recomended">Recomended</p>
+                </div>
+                <div class="card-movies">
+                    <img src="./src/images/Rectangle 139.png" alt="">
+                    <p class="movie-name">Tenet</p>
+                    <div class="con-movie-genre">
+                        <p class="movie-genre">Action</p>
+                        <p class="movie-genre">Sci-Fi</p>
+                    </div>
+                    <p class="recomended">Recomended</p>
+                </div>
+                <div class="card-movies">
+                    <img src="./src/images/Rectangle 119.png" alt="">
+                    <p class="movie-name">Spiderman</p>
+                    <div class="con-movie-genre">
+                        <p class="movie-genre">Action</p>
+                        <p class="movie-genre">Adventure</p>
+                    </div>
                 </div>
             </div>
-            <form class="form-sign-up" action="">
-                <div class="con-input">
-                    <label for="input-email">Email</label>
-                    <input type="email" name="email" id="input-email" placeholder="Enter your email" required>
+            <p class="link-view-all">View All <span>&#8594;</span></p>
+        </article>
+        <article class="con-movies-upcoming">
+            <h2 class="title">UPCOMING MOVIES</h2>
+            <p class="sub-title sub-title-movie">Exciting Movie Coming Soon</p>
+            <div class="btn-movies-upcoming">
+                <button class="btn-left">&#8592;</button>
+                <button class="btn-right">&#8594;</button>
+            </div>
+            <div class="con-card-movies">
+                <div class="card-movies">
+                    <img src="./src/images/Rectangle 140.png" alt="">
+                    <p class="movie-name">Black Widow</p>
+                    <div class="con-movie-genre">
+                        <p class="movie-genre">Action</p>
+                        <p class="movie-genre">Adventure</p>
+                    </div>
                 </div>
-                <div class="con-input">
-                    <label for="input-password">Password</label>
-                    <input type="password" name="password" id="input-password" placeholder="Enter your password" required autocomplete="on">
-                    <img class="show-password" src="./src/images/icons/icon-eye.svg" alt="">
+                <div class="card-movies">
+                    <img src="./src/images/Rectangle 1399.png" alt="">
+                    <p class="movie-name">The Witches</p>
+                    <div class="con-movie-genre">
+                        <p class="movie-genre">Comedy</p>
+                        <p class="movie-genre">Adventure</p>
+                    </div>
                 </div>
-                <label class="con-rules" for="term">I agree to terms & conditions
-                    <input type="checkbox" name="term" id="term" required="">
-                    <span class="checkmark"></span>
-                </label>
-                <input class="btn-submit" type="submit" value="Join For Free Now">
+                <div class="card-movies">
+                    <img src="./src/images/Rectangle 139.png" alt="">
+                    <p class="movie-name">Tenet</p>
+                    <div class="con-movie-genre">
+                        <p class="movie-genre">Action</p>
+                        <p class="movie-genre">Sci-Fi</p>
+                    </div>
+                </div>
+                <div class="card-movies">
+                    <img src="./src/images/Rectangle 119.png" alt="">
+                    <p class="movie-name">Spiderman</p>
+                    <div class="con-movie-genre">
+                        <p class="movie-genre">Action</p>
+                        <p class="movie-genre">Adventure</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="con-subscribe">
+            <p>Subscribe to our newsletter</p>
+            <form action="">
+                <input type="text" name="first-name" id="first-name" placeholder="First name">
+                <input type="email" name="email" id="email" placeholder="Email Address">
+                <input type="submit" value="Subscribe Now">
             </form>
-            <div class="link-login">
-                <p>Already have an account?</p>
-                <a href="">Log in</a>
+        </article>
+        <footer>
+            <div class="con-list-footer">
+                <div class="sub-list-footer footer-tickitz">
+                    <img src="./src/images/Tickitz 1.png" alt="icon tickitz">
+                    <p>Stop waiting in line. Buy tickets
+                        conveniently, watch movies quietly.</p>
+                </div>
+                <div class="sub-list-footer footer-explore">
+                    <p class="title-list-footer">Explore</p>
+                    <p>Cinemas</p>
+                    <p>Movie List</p>
+                    <p>My Ticket</p>
+                    <p>Notification</p>
+                </div>
+                <div class="sub-list-footer footer-sponsor">
+                    <p class="title-list-footer">Our Sponsor</p>
+                    <img src="./src/images/ebv.id 2.png" alt="">
+                    <img class="icon-cinema" src="./src/images/CineOne21 2.png" alt="">
+                    <img class="icon-hiflix" src="./src/images/hiflix 2.png" alt="">
+                </div>
+                <div class="sub-list-footer footer-follow">
+                    <p class="title-list-footer">Follow us</p>
+                    <div class="con-medsos">
+                        <img src="./src/images/icons/eva_facebook-outline.svg" alt="">
+                        <a href="">Tickitz Cinema id</a>
+                    </div>
+                    <div class="con-medsos">
+                        <img src="./src/images/icons/bx_bxl-instagram.svg" alt="">
+                        <a href="">tickitz.id</a>
+                    </div>
+                    <div class="con-medsos">
+                        <img src="./src/images/icons/eva_twitter-outline.svg" alt="">
+                        <a href="">tickitz.id</a>
+                    </div>
+                    <div class="con-medsos">
+                        <img src="./src/images/icons/feather_youtube.svg" alt="">
+                        <a href="">Tickitz Cinema id</a>
+                    </div>
+                </div>
             </div>
-            <div class="con-line-or">
-                <hr>
-                <p>Or</p>
-                <hr>
-            </div>
-            <div class="con-logo-sosmed">
-                <a class="logo-sosmed">
-                    <img class="icon" src="./src/images/icons/google-icon.png" alt="icon-google">
-                    <p>Google</p>
-                </a>
-                <a class="logo-sosmed">
-                    <img class="icon" src="./src/images/icons/fb-icon.png" alt="">
-                    <p>Facebook</p>
-                </a>
-            </div>
-        </section>
+            <p class="copy-right">© 2020 Tickitz. All Rights Reserved.</p>
+        </footer>
     </main>
-    <script> 
-        const show_password = document.querySelector(".show-password");
-
-        show_password.addEventListener("click", () => {
-            const elmInputPassword = document.querySelector("#input-password");
-            elmInputPassword.type = 'text'
+    <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+            const btnCheck = document.querySelector("#check-menu");
+            const menuSide = document.querySelector("#side-menu");
+            if(btnCheck.checked){
+                menuSide.style.width = "70%";
+            }else {
+                menuSide.style.width = "0";
+            }
         })
     </script>
 </body>

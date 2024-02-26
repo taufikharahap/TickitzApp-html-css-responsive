@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/sign-up.css">
+
+
+</head>
+<body>
+    <main>
+        <div class="icon-tickitz">
+            <img src="../src/images/icons/icon-tickitz.png" alt="icon-tickitz">
+        </div>
+        <section>
+            <div class="con-flow-sign-up">
+                <div class="con-number-flow">
+                    <p class="number-flow number-1">1</p>
+                    <p class="title-number-flow title-number-1">Fill Form</p>
+                </div>
+                <div class="con-line-flow">
+                    <img class="line-flow" src="../src/images/icons/line-icon.svg" alt="">
+                </div>
+                <div class="con-number-flow">
+                    <p class="number-flow">2</p>
+                    <p class="title-number-flow">Activate</p>
+                </div>
+                <div class="con-line-flow">
+                    <img class="line-flow" src="../src/images/icons/line-icon.svg" alt="">
+                </div>
+                <div class="con-number-flow">
+                    <p class="number-flow">3</p>
+                    <p class="title-number-flow">Done</p>
+                </div>
+            </div>
+            <form class="form-sign-up" action="">
+                <div class="con-input">
+                    <label for="input-email">Email</label>
+                    <input type="email" name="email" id="input-email" placeholder="Enter your email" required>
+                </div>
+                <div class="con-input">
+                    <label for="input-password">Password</label>
+                    <input type="password" name="password" id="input-password" placeholder="Enter your password" required autocomplete="on">
+                    <img class="show-password" src="../src/images/icons/icon-eye.svg" alt="">
+                </div>
+                <label class="con-rules" for="term">I agree to terms & conditions
+                    <input type="checkbox" name="term" id="term" required="">
+                    <span class="checkmark"></span>
+                </label>
+                <input class="btn-submit" type="submit" value="Join For Free Now">
+            </form>
+            <div class="link-login">
+                <p>Already have an account?</p>
+                <a href="">Log in</a>
+            </div>
+            <div class="con-line-or">
+                <hr>
+                <p>Or</p>
+                <hr>
+            </div>
+            <div class="con-logo-sosmed">
+                <a class="logo-sosmed">
+                    <img class="icon" src="../src/images/icons/google-icon.png" alt="icon-google">
+                    <p>Google</p>
+                </a>
+                <a class="logo-sosmed">
+                    <img class="icon" src="../src/images/icons/fb-icon.png" alt="">
+                    <p>Facebook</p>
+                </a>
+            </div>
+        </section>
+    </main>
+    <script> 
+        const show_password = document.querySelector(".show-password");
+
+        show_password.addEventListener("click", () => {
+            const elmInputPassword = document.querySelector("#input-password");
+
+            if(elmInputPassword.type == "password") {
+                elmInputPassword.type = "text";
+            }else {
+                elmInputPassword.type = "password";
+            }
+        })
+    </script>
+</body>
+</html>

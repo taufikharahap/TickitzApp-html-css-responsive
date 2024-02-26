@@ -1,0 +1,55 @@
+@media screen and (max-width: 600px) {
+    .con-btn-sign{
+        display: none;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+
+    header {
+        height: 91px;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        padding: 0px 40px 0px 40px;  
+        background-color: #FFFFFF;
+        z-index: 99;
+    }
+    
+    header .btn-nav {
+        display: block;
+        background-color: aqua;
+    }
+
+    header .icon-tickitz img {
+        width: 93px;
+        height: 37px;
+    }
+
+    header #side-menu {
+        position: absolute;
+        top: 91px;
+        left: 0;
+        height: 100vh;
+        width: 0;
+        background-color: cornflowerblue;
+        z-index: 999;
+        transition: all ease .3s;
+        overflow-x: hidden;
+    }
+    
+    header nav ul {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 20px 20px;
+    }
+
+    /* header .btn-nav input:checked #side-menu {
+        background-color: rgb(16, 77, 56);
+    } */
+
+
+
+}

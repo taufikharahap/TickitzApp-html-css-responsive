@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Movie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../src/css/detail-movie.css">
+    <link rel="stylesheet" href="../src/css/responsive-detail-movie.css">
+</head>
+<body>
+    <header>
+        <div class="icon-tickitz">
+            <img src="../src/images/icons/Tickitz 1.png" alt="icon tickitz app">
+        </div>
+        <nav class="side-menu" id="side-menu">
+            <ul class="nav-list">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="">Movie</a></li>
+                <li><a href="">Buy Ticket</a></li>
+                <ul id="con-btn-sign-side">
+                    <li id="btn-sign-in"><a href="">SignIn</a></li>
+                    <li id="btn-sign-up"><a href="">Sign Up</a></li>
+                </ul>
+            </ul>
+        </nav>
+        <div class="con-btn-sign">
+            <a class="btn-sign-in" href="./pages/sign-in.html">SignIn</a>
+            <a class="btn-sign-up" href="./pages/sign-up.html">Sign Up</a>
+        </div>
+        <button id="btn-menu" type="button">
+            <img src="../src/images/icons/gg_menu-right-alt.svg" alt="">
+        </button>
+    </header>
+    <div class="con-hero">
+        <img src="../src/images/Rectangle 119.png" alt="">
+    </div>
+    <main>
+        <article class="con-detail-movie">
+            <div class="con-header-movie">
+                <div class="con-poster-movie">
+                    <img src="../src/images/Rectangle 119.png" alt="">
+                </div>
+                <div class="con-right-header">
+                    <h2 class="movie-name">Spider-Man: Homecoming</h2>
+                    <div class="con-genre">
+                        <p>Action</p>
+                        <p>Adventure</p>
+                    </div>
+                    <div class="con-sub-detail">
+                        <div class="sub-detail">
+                            <p class="title">Release date</p>
+                            <p>Juni 28, 2017</p>
+                        </div>
+                        <div class="sub-detail right">
+                            <p class="title">Directed by</p>
+                            <p>Jon Watss</p>
+                        </div>
+                    </div>
+                    <div class="con-sub-detail">
+                        <div class="sub-detail">
+                            <p class="title">Duration</p>
+                            <p>2 hours 13 minutes</p>
+                        </div>
+                        <div class="sub-detail right">
+                            <p class="title">Casts</p>
+                            <p>Tom Holland, Michael Keaton, Robert Downey Jr</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="con-sinopsis">
+                <h4 class="title-synopsi">Synopsis</h4>
+                <p class="synopsis">Thrilled by his experience with the Avengers, Peter returns home, where he lives with his Aunt May, under the watchful eye of his new mentor Tony Stark, Peter tries to fall back into his normal daily routine - distracted by thoughts of proving himself to be more than just your friendly neighborhood Spider-Man - but when the Vulture emerges as a new villain, everything that Peter holds most important will be threatened. </p>
+            </div>
+        </article>
+        <article class="con-booking">
+            <h2 class="title-booking">Book Tickets</h2>
+            <form action="" class="form-date">
+                <h4 class="title-filter-mobile">Showtimes and Tickets</h4>
+                <div class="con-input">
+                    <label class="title-input" for="input-date">Choose Date</label>
+                    <input id="input-date" type="date" name="date" value="2021-07-20">
+                </div>
+                <div class="con-input">
+                    <label class="title-input" for="input-time">Choose Time</label>
+                    <input type="time" name="input-time" id="input-time" value="08:30">
+                </div>
+                <div class="con-input">
+                    <label class="title-input" for="input-location">Choose Location</label>
+                    <div class="con-location">
+                        <img src="../src/images/icons/entypo_location.svg" alt="">
+                        <select name="input-location" id="input-location" class="input-location">
+                            <option value="purwokerto">Purwokerto</option>
+                            <option value="medan">Medan</option>
+                        </select>
+                    </div>
+                </div>
+                <input class="btn-submit" type="submit" value="Filter">
+            </form>
+            <section class="con-cinema">
+                <p class="title-input">Choose Cinema <span class="result">39 Result</span></p>
+                <span class="result" id="result-mobile">39 Result</span>
+                <form class="form-list-cinema" action="">
+                    <div class="con-btn-list-cinema">
+                        <label class="con-btn-cinema" for="ebuid">
+                            <input id="ebuid" type="checkbox" name="ebuid" value="ebuid">
+                            <div class="btn-cinema card-ebuid">
+                                <img class="icon-cover" src="../src/images/icons/ebv.id 2.png" alt="">
+                                <div class="con-cover-cinema">
+                                    <div class="left-cinema-detail">
+                                        <img src="../src/images/icons/EBV.id-detail.png" alt="">
+                                        <p>Whatever street No.12, South Purwokerto</p>
+                                    </div>
+                                    <div class="right-cinema-detail">
+                                        <img class="icon-arrow" src="../src/images/icons/Forward.png">
+                                    </div>
+                                </div>
+                                <div class="con-cinema-detail">
+                                    <hr>
+                                    <p class="title-category-time">REGULAR</p>
+                                    <div class="con-time">
+                                        <p>08:30 AM</p>
+                                        <p>10:30 AM</p>
+                                        <p>10:30 AM</p>
+                                        <p>10:30 AM</p>
+                                        <p>10:30 AM</p>
+                                        <p class="active">10:30 AM</p>
+                                        <p>10:30 AM</p>
+                                    </div>
+                                    <p class="title-category-time">GOLD</p>
+                                    <div class="con-time">
+                                        <p>08:30 AM</p>
+                                        <p>10:30 AM</p>
+                                        <p>10:30 AM</p>
+                                        <p class="active">10:30 AM</p>
+                                        <p>10:30 AM</p>
+                                    </div>
+                                    <p class="title-category-time">PELATINUM</p>
+                                    <div class="con-time">
+                                        <p>08:30 AM</p>
+                                        <p>10:30 AM</p>
+                                        <p>10:30 AM</p>
+                                        <p class="active">10:30 AM</p>
+                                        <p>10:30 AM</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="con-btn-cinema" for="hiflix">
+                            <input id="hiflix" type="checkbox" name="hiflix" value="hiflix" checked>
+                            <div class="btn-cinema">
+                                <img class="icon-cover" id="icon-hiflix-desktop" src="../src/images/icons/hiflix-white.svg" alt="">
+                                <img class="icon-cover" id="icon-hiflix-mobile" src="../src/images/icons/hiflix 2.png" alt="">
+                                <div class="con-cover-cinema">
+                                    <div class="left-cinema-detail">
+                                        <img src="../src/images/icons/Cineone 21-detail.png" alt="">
+                                        <p>Whatever street No.12, South Purwokerto</p>
+                                    </div>
+                                    <div class="right-cinema-detail">
+                                        <img class="icon-arrow" src="../src/images/icons/Forward-down.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="con-btn-cinema" for="cineOne21">
+                            <input id="cineOne21" type="checkbox" name="cineOne21" value="cineOne21">
+                            <div class="btn-cinema">
+                                <img class="icon-cover" src="../src/images/icons/CineOne21 2.png" alt="">
+                                <div class="con-cover-cinema">
+                                    <div class="left-cinema-detail">
+                                        <img src="../src/images/icons/Cineone 21-detail.png" alt="">
+                                        <p>Whatever street No.12, South Purwokerto</p>
+                                    </div>
+                                    <div class="right-cinema-detail">
+                                        <img class="icon-arrow" src="../src/images/icons/Forward-down.png">
+                                    </div>
+                                </div>
+                            </div>
+                        </label>
+                        <label class="con-btn-cinema ebuid2" for="ebuid2">
+                            <input id="ebuid2" type="checkbox" name="ebuid2" value="ebuid2">
+                            <div class="btn-cinema">
+                                <img class="icon-cover" src="../src/images/icons/ebv.id 2.png" alt="">
+                            </div>
+                        </label>
+                    </div>
+                    <div class="con-pagination-cinema">
+                        <button type="button" class="number number-1">1</button type="button">
+                        <button type="button" class="number">2</button type="button">
+                        <button type="button" class="number">3</button type="button">
+                        <button type="button" class="number">4</button type="button">
+                    </div>
+                    <input class="btn-submit btn-submit-cinema" type="button" value="Book Now">
+                </form>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div class="con-list-footer">
+            <div class="sub-list-footer footer-tickitz">
+                <img src="../src/images/icons/Tickitz 1.png" alt="icon tickitz">
+                <p>Stop waiting in line. Buy tickets
+                    conveniently, watch movies quietly.</p>
+            </div>
+            <div class="sub-list-footer footer-explore">
+                <p class="title-list-footer">Explore</p>
+                <div class="list-explore">
+                    <p>Cinemas</p>
+                    <p>Movie List</p>
+                    <p>Notification</p>
+                    <p>My Ticket</p>
+                </div>
+            </div>
+            <div class="sub-list-footer footer-sponsor">
+                <p class="title-list-footer">Our Sponsor</p>
+                <div class="list-sponsor">
+                    <img src="../src/images/icons/ebv.id 2.png" alt="">
+                    <img class.="icon-cinema" src="../src/images/icons/CineOne21 2.png" alt="">
+                    <img class.="icon-hiflix" src="../src/images/icons/hiflix 2.png" alt="">
+                </div>
+            </div>
+            <div class="sub-list-footer footer-follow">
+                <p class="title-list-footer">Follow us</p>
+                <div class="con-icon-medsos">
+                    <div class="con-medsos">
+                        <img src="../src/images/icons/eva_facebook-outline.svg" alt="">
+                        <a href="">Tickitz Cinema id</a>
+                    </div>
+                    <div class="con-medsos">
+                        <img src="../src/images/icons/bx_bxl-instagram.svg" alt="">
+                        <a href="">tickitz.id</a>
+                    </div>
+                    <div class="con-medsos">
+                        <img src="../src/images/icons/eva_twitter-outline.svg" alt="">
+                        <a href="">tickitz.id</a>
+                    </div>
+                    <div class="con-medsos">
+                        <img src="../src/images/icons/feather_youtube.svg" alt="">
+                        <a href="">Tickitz Cinema id</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copy-right">© 2020 Tickitz. All Rights Reserved.</p>
+    </footer>
+</main>
+<script>
+    document.addEventListener("DOMContentLoaded", ()=>{
+        const sideMenu = document.querySelector(".side-menu");
+        const btnMenu = document.querySelector("#btn-menu");
+        
+        btnMenu.addEventListener("click", function() {
+            sideMenu.classList.toggle("open");
+        })
+        
+        document.addEventListener("click", function(e){
+            
+            if (e.target.id == "side-menu") {
+                sideMenu.classList.toggle("open");
+            }
+        })
+    })
+</script>
+</body>
+</html>

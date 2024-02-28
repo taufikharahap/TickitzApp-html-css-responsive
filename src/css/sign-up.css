@@ -171,7 +171,7 @@ section {
     opacity: 0;
     width: 0;
     height: 0;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .con-rules .checkmark {
@@ -318,6 +318,30 @@ section {
 
     section {
         overflow: scroll;
+        padding: 50px 30px;
+    }
+
+    .con-flow-sign-up, .con-rules, .logo-sosmed p{
+        display: none;
+    }
+
+    .con-logo-sosmed {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-sosmed {
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .con-input input, .btn-submit {
+        height: 50px;
+        line-height: 50px;
     }
 }
 

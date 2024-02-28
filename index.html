@@ -14,23 +14,26 @@
 <body>
     <header>
         <div class="icon-tickitz">
-            <img src="../src/images/Tickitz 1.png" alt="icon tickitz app">
+            <img src="../src/images/icons/Tickitz 1.png" alt="icon tickitz app">
         </div>
-        <nav id="side-menu">
-            <ul>
+        <nav class="side-menu" id="side-menu">
+            <ul class="nav-list">
                 <li><a href="">Home</a></li>
                 <li><a href="">Movie</a></li>
                 <li><a href="">Buy Ticket</a></li>
+                <ul id="con-btn-sign-side">
+                    <li id="btn-sign-in"><a href="./pages/sign-in.html">SignIn</a></li>
+                    <li id="btn-sign-up"><a href="./pages/sign-up.html">Sign Up</a></li>
+                </ul>
             </ul>
         </nav>
         <div class="con-btn-sign">
             <a class="btn-sign-in" href="./pages/sign-in.html">SignIn</a>
             <a class="btn-sign-up" href="./pages/sign-up.html">Sign Up</a>
         </div>
-        <label class="btn-nav" for="check-menu">
+        <button id="btn-menu" type="button">
             <img src="./src/images/icons/gg_menu-right-alt.svg" alt="">
-            <input id="check-menu" type="checkbox">
-        </label>
+        </button>
     </header>
     <main>
         <article class="con-hero">
@@ -41,12 +44,12 @@
             </section>
             <section class="hero-images">
                 <div class="sub-images">
-                    <img src="./src/images/Rectangle 35.png" alt="">
-                    <img src="./src/images/Rectangle 37.png" alt="">
+                    <img class="image-litle" src="./src/images/Rectangle 35.png" alt="">
+                    <img class="image-large" src="./src/images/Rectangle 37.png" alt="">
                 </div>
                 <div class="sub-images">
-                    <img src="./src/images/Rectangle 36.png" alt="">
-                    <img src="./src/images/Rectangle 38.png" alt="">
+                    <img class="image-large" src="./src/images/Rectangle 36.png" alt="">
+                    <img class="image-litle" src="./src/images/Rectangle 38.png" alt="">
                 </div>
             </section>
         </article>
@@ -89,7 +92,7 @@
                         <p class="movie-genre">Adventure</p>
                     </div>
                     <div class="con-details-buy">
-                        <a href="">Details</a>
+                        <a href="./pages/detail-movie.html">Details</a>
                         <a class="btn-buy">Buy Ticket</a>
                     </div>
                     <div class="dark-image"></div>
@@ -176,40 +179,46 @@
         <footer>
             <div class="con-list-footer">
                 <div class="sub-list-footer footer-tickitz">
-                    <img src="./src/images/Tickitz 1.png" alt="icon tickitz">
+                    <img src="./src/images/icons/Tickitz 1.png" alt="icon tickitz">
                     <p>Stop waiting in line. Buy tickets
                         conveniently, watch movies quietly.</p>
                 </div>
                 <div class="sub-list-footer footer-explore">
                     <p class="title-list-footer">Explore</p>
-                    <p>Cinemas</p>
-                    <p>Movie List</p>
-                    <p>My Ticket</p>
-                    <p>Notification</p>
+                    <div class="list-explore">
+                        <p>Cinemas</p>
+                        <p>Movie List</p>
+                        <p>Notification</p>
+                        <p>My Ticket</p>
+                    </div>
                 </div>
                 <div class="sub-list-footer footer-sponsor">
                     <p class="title-list-footer">Our Sponsor</p>
-                    <img src="./src/images/ebv.id 2.png" alt="">
-                    <img class="icon-cinema" src="./src/images/CineOne21 2.png" alt="">
-                    <img class="icon-hiflix" src="./src/images/hiflix 2.png" alt="">
+                    <div class="list-sponsor">
+                        <img src="./src/images/icons/ebv.id 2.png" alt="">
+                        <img class="icon-cinema" src="./src/images/icons/CineOne21 2.png" alt="">
+                        <img class="icon-hiflix" src="./src/images/icons/hiflix 2.png" alt="">
+                    </div>
                 </div>
                 <div class="sub-list-footer footer-follow">
                     <p class="title-list-footer">Follow us</p>
-                    <div class="con-medsos">
-                        <img src="./src/images/icons/eva_facebook-outline.svg" alt="">
-                        <a href="">Tickitz Cinema id</a>
-                    </div>
-                    <div class="con-medsos">
-                        <img src="./src/images/icons/bx_bxl-instagram.svg" alt="">
-                        <a href="">tickitz.id</a>
-                    </div>
-                    <div class="con-medsos">
-                        <img src="./src/images/icons/eva_twitter-outline.svg" alt="">
-                        <a href="">tickitz.id</a>
-                    </div>
-                    <div class="con-medsos">
-                        <img src="./src/images/icons/feather_youtube.svg" alt="">
-                        <a href="">Tickitz Cinema id</a>
+                    <div class="con-icon-medsos">
+                        <div class="con-medsos">
+                            <img src="./src/images/icons/eva_facebook-outline.svg" alt="">
+                            <a href="">Tickitz Cinema id</a>
+                        </div>
+                        <div class="con-medsos">
+                            <img src="./src/images/icons/bx_bxl-instagram.svg" alt="">
+                            <a href="">tickitz.id</a>
+                        </div>
+                        <div class="con-medsos">
+                            <img src="./src/images/icons/eva_twitter-outline.svg" alt="">
+                            <a href="">tickitz.id</a>
+                        </div>
+                        <div class="con-medsos">
+                            <img src="./src/images/icons/feather_youtube.svg" alt="">
+                            <a href="">Tickitz Cinema id</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -218,13 +227,19 @@
     </main>
     <script>
         document.addEventListener("DOMContentLoaded", ()=>{
-            const btnCheck = document.querySelector("#check-menu");
-            const menuSide = document.querySelector("#side-menu");
-            if(btnCheck.checked){
-                menuSide.style.width = "70%";
-            }else {
-                menuSide.style.width = "0";
-            }
+            const sideMenu = document.querySelector(".side-menu");
+            const btnMenu = document.querySelector("#btn-menu");
+            
+            btnMenu.addEventListener("click", function() {
+                sideMenu.classList.toggle("open");
+            })
+            
+            document.addEventListener("click", function(e){
+                
+                if (e.target.id == "side-menu") {
+                    sideMenu.classList.toggle("open");
+                }
+            })
         })
     </script>
 </body>

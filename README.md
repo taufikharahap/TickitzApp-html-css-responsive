@@ -1,5 +1,5 @@
 ﻿<h1 align="center">
-  Slicing Aplikasi Tiket Dengan HTML, CSS and Responsive Web
+  Slicing Tickietz app with HTML, CSS and Responsive Web
 </h1>
 
 <p align="center"><img src="./src/images/Screen-Shot-web.png" width="100%" alt="Screenshot Page" /></p>
